@@ -1,19 +1,40 @@
 $font-stack: Helvetica, sans-serif;
-$CorDaLetra: rgb(8, 163, 8);
-$CorDeFundo: rgb(62, 8, 89);
-$CorDeAnc: rgb(8, 163, 78);
-$CorDeHoverLetra: rgb(19, 238, 191);
+$CorDaLetra: rgb(0, 0, 0);
+$CorDeFundo: rgb(218, 159, 49);
+$CorDeAnc: rgb(0, 0, 0);
+$CorDeHoverLetra: rgb(251, 255, 3);
 
 #container {
   width: 100%;
   display: inline-block;
 }
+
+body{
+  background-image: url(/imagens/queimadeestoque.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 img{
   left: 0px;
   top: 0px;
   padding: auto;
   position:absolute;
 }
+
+.titulo {
+  
+  padding-top: 15%;
+  padding-left: 20%;
+  width: 100%;
+  font-size: 25px;
+  align-items: center;
+  color: $CorDeHoverLetra;
+  
+  
+
+}
+
 
 nav {
   overflow: hidden;
@@ -47,6 +68,3 @@ nav {
   }
 }
 
-.content {
-  text-align: right;
-}
