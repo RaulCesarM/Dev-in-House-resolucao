@@ -55,12 +55,8 @@ nav {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-color: $CorBody;
-  scrollbar-width: 100%;
+  overflow: scroll;
 }
 
 .cards {
@@ -121,8 +117,14 @@ body {
 h1 {
   font-size: 2.8rem;
   color: $letracard;
-   margin: 50px 0px 0px 0px;
-  text-align: center;
+   margin: 80px 0px 0px 0px;
+ 
+}
+
+h3 {
+  font-size: 2.8rem;
+  color: $letracard;
+   
 }
 
 
@@ -175,8 +177,8 @@ footer {
   border: none;
   color: $CorDaLetra;
   padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
+  text-align: center;  
   display: inline-block;
   font-size: 16px;
 }
+

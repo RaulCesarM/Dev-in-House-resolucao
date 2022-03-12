@@ -41,12 +41,8 @@ nav ul li a:hover {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-color: #34495e;
-  scrollbar-width: 100%;
+  overflow: scroll;
 }
 
 .cards {
@@ -103,8 +99,12 @@ body {
 h1 {
   font-size: 2.8rem;
   color: #fff;
-  margin: 50px 0px 0px 0px;
-  text-align: center;
+  margin: 80px 0px 0px 0px;
+}
+
+h3 {
+  font-size: 2.8rem;
+  color: #fff;
 }
 
 .entre {
@@ -152,7 +152,6 @@ footer ul li a:hover {
   color: black;
   padding: 10px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
