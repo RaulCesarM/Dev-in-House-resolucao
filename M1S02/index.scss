@@ -9,6 +9,7 @@ $letracard : #fff;
 $SombraCard: black;
 
 
+
 #container {
   width: 100%;
   display: inline-block;
@@ -59,6 +60,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: $CorBody;
+  scrollbar-width: 100%;
 }
 
 .cards {
@@ -166,3 +168,5 @@ footer {
     }
   }
 }
+
+
