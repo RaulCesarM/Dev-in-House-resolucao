@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -12,7 +13,9 @@
     />
     <title>Rocket Viajens</title>
   </head>
-  <body class="bg-light">
+  <body class="bg-info">
+
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
       <a class="navbar-brand" href="#">ROCKET</a>
       <button
@@ -83,87 +86,27 @@
         <button
           class="btn btn-outline-dark my-2 my-sm-0"
           data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
+          data-bs-target="#ModalLogin"
         >
           Login
         </button>
       </div>
     </nav>
 
-    <div
-      id="carouselExampleCaptions"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/imagens/campo.jpg" class="d-block w-100" />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>PODE SER CAMPO</h1>
-            <h2>As mais belas cabanas e os lugares mais calmos</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/imagens/paia.jpg" class="d-block w-100" />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>PODE SER PRAIA</h1>
-            <h2>As praias mais lindas para voçe se divertir</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/imagens/montanha.jpg" class="d-block w-100" />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>PODE SER MONTANHA</h1>
-            <h2>A mais belas colinas e montanhas</h2>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <div><br>
+      <h1 class="coloracao" align="center">Rocket Viagens </h1> 
+      <h2 class="coloracao" align="center">"Porque voçe merece oque há de melhor"</h2>
+    </div>
+    
+    
+    <div><br>
+      <h1 class="coloracao" align="center">Os Melhores Destinos</h1> <br><hr>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
+          <div class="card col pb-1 py-md-2 border bg-light">
             <img
               class="card-img-top"
               src="/imagens/praiaRepublicaDominicana.jpg"
@@ -174,35 +117,46 @@
               <a
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#RepublicaDominicana"
                 >saiba mais</a
               >
             </div>
           </div>
-        </div>
+        </div><br>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
+          <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praiaMaldivas.jpg" />
             <div class="card-body">
               <h5 class="card-title">Ilhas Maldivas</h5>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#Maldivas"
+              >saiba mais</a
+            >
             </div>
           </div>
-        </div>
+        </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
+          <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praiaHawai.jpg" />
             <div class="card-body">
               <h5 class="card-title">Praias do Hawai</h5>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#Hawai"
+                >saiba mais</a
+              >
+              
             </div>
           </div>
-        </div>
+        </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
+          <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praia2.jpg" />
             <div class="card-body">
               <h5 class="card-title">Florianopolis</h5>
@@ -212,12 +166,60 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><br>
 
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
+          <div class="card col pb-1 py-md-2 border bg-light">
+            <img
+              class="card-img-top"
+              src="/imagens/praiaRepublicaDominicana.jpg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Re Dominicana</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">saiba mais</a>
+            </div>
+          </div>
+        </div><br>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card col pb-1 py-md-2 border bg-light">
+            <img class="card-img-top" src="/imagens/praiaMaldivas.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Ilhas Maldivas</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">saiba mais</a>
+            </div>
+          </div>
+        </div><br>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card col pb-1 py-md-2 border bg-light">
+            <img class="card-img-top" src="/imagens/praiaHawai.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Praias do Hawai</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">saiba mais</a>
+            </div>
+          </div>
+        </div><br>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card col pb-1 py-md-2 border bg-light">
+            <img class="card-img-top" src="/imagens/praia2.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Florianopolis</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card col pb-1 py-md-2 border bg-light">
             <img
               class="card-img-top"
               src="/imagens/praiaRepublicaDominicana.jpg"
@@ -228,9 +230,9 @@
               <a href="#" class="btn btn-primary">saiba mais</a>
             </div>
           </div>
-        </div>
+        </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
+          <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praiaMaldivas.jpg" />
             <div class="card-body">
               <h5 class="card-title">Ilhas Maldivas</h5>
@@ -238,9 +240,9 @@
               <a href="#" class="btn btn-primary">saiba mais</a>
             </div>
           </div>
-        </div>
+        </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
+          <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praiaHawai.jpg" />
             <div class="card-body">
               <h5 class="card-title">Praias do Hawai</h5>
@@ -248,9 +250,9 @@
               <a href="#" class="btn btn-primary">saiba mais</a>
             </div>
           </div>
-        </div>
+        </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
+          <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praia2.jpg" />
             <div class="card-body">
               <h5 class="card-title">Florianopolis</h5>
@@ -260,70 +262,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><br>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
-            <img
-              class="card-img-top"
-              src="/imagens/praiaRepublicaDominicana.jpg"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Republica Dominicana</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
-            <img class="card-img-top" src="/imagens/praiaMaldivas.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Ilhas Maldivas</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
-            <img class="card-img-top" src="/imagens/praiaHawai.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Praias do Hawai</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card col pb-1 py-md-1 border bg-light">
-            <img class="card-img-top" src="/imagens/praia2.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Florianopolis</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
+    <!-- Modal login -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="ModalLogin"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -331,28 +275,123 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="form-group">
+              <label for="exampleDropdownFormEmail2">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="email@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleDropdownFormPassword2">Senha</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleDropdownFormPassword2"
+                placeholder="Senha"
+              />
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="dropdownCheck2"
+              />
+              <label class="form-check-label" for="dropdownCheck2">
+                Lembrar
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Modal republica dominicana -->
+    <div
+      class="modal fade"
+      id="RepublicaDominicana"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Republica Dominicana</h5>
+            
+            </button>
+          </div>
+          <div class="modal-body">A República Dominicana é um país caribenho que compartilha a ilha Hispaniola com o Haiti a oeste. É conhecida por suas praias, resorts e golfe. Seu território compreende floresta tropical, savana e montanhas, inclusive o Pico Duarte, a montanha mais alta do Caribe....</div>
+          <div class="modal-footer">
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal Ilhas Maldivas -->
+      <div
+      class="modal fade"
+      id="Maldivas"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Maldivas</h5>
+            
+            </button>
+          </div>
+          <div class="modal-body">As Maldivas são uma nação tropical no Oceano Índico composta por 26 atóis em formato de anel, que são formados por mais de 1.000 ilhas de coral. O país é conhecido pelas praias, pelas lagoas azuis e pelos extensos recifes. A capital, Malé, tem um movimentado mercado de peixes, restaurantes e lojas na rua principal, Majeedhee Magu, além da Hukuru Miskiy (também conhecida como Mesquita da Sexta-Feira), do século XVII, feita de coral branco esculpido</div>
+          <div class="modal-footer">
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Modal Ilhas Maldivas -->
+     <div
+     class="modal fade"
+     id="Hawai"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLongTitle">Hawai</h5>
+           
+           </button>
+         </div>
+         <div class="modal-body"> O Havaí, um estado dos EUA, é um arquipélago vulcânico isolado no Pacífico Central. Suas ilhas são conhecidas pelas paisagens acidentadas compostas de penhascos, cachoeiras, florestas tropicais e praias com areia dourada, vermelha, preta e até mesmo verde. Das 6 ilhas principais, Oahu tem a maior cidade e capital do Havaí, Honolulu, que abriga a praia de Waikiki, em formato de lua crescente, e os memoriais da Segunda Guerra Mundial, em Pearl Harbor.</div>
+         <div class="modal-footer">
+       
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 
   <script
