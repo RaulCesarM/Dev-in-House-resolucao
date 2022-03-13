@@ -15,9 +15,11 @@
   </head>
   <body class="bg-info">
 
+       <!-- ------------------------------------------------------------navbar----------------------------------->
+
     
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
-      <a class="navbar-brand" href="#">ROCKET</a>
+      <a class="navbar-brand"  >ROCKET</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -33,9 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Inicio<span class="sr-only">(current)</span></a
-            >
+           
           </li>
           <li class="nav-item">
             <div class="btn-group">
@@ -48,8 +48,8 @@
               >
                 Lista de Serviços
               </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <button class="dropdown-item" type="button">Pacotes</button>
+              <div class="dropdown-menu dropdown-menu-right bg-info">
+                <button class="dropdown-item " type="button">Pacotes</button>
                 <button class="dropdown-item" type="button">Promoções</button>
                 <button class="dropdown-item" type="button">Agentes</button>
                 <button class="dropdown-item" type="button">Parceiros</button>
@@ -92,6 +92,9 @@
         </button>
       </div>
     </nav>
+       <!-- ------------------------------------------------------------navbar--------------====--------------------->
+
+       <!-- ------------------------------------------------------------Baner apresentação----------------------------------->
 
     <div><br>
       <h1 class="coloracao" align="center">Rocket Viagens </h1> 
@@ -103,6 +106,11 @@
       <h1 class="coloracao" align="center">Os Melhores Destinos</h1> <br><hr>
     </div>
 
+      <!-- ------------------------------------------------------------Baner apresentação----------------------------------->
+
+
+       <!-- ------------------------------------------------------------Cards----------------------------------->
+
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -112,7 +120,7 @@
               src="/imagens/praiaRepublicaDominicana.jpg"
             />
             <div class="card-body">
-              <h5 class="card-title">Rep. Dominicana</h5>
+              <h6 class="card-title">Rep. Dominicana</h6>
               <p class="card-text"></p>
               <a
                 class="btn btn-primary"
@@ -128,7 +136,7 @@
           <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praiaMaldivas.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Ilhas Maldivas</h5>
+              <h6 class="card-title">Ilhas Maldivas</h6>
               <p class="card-text"></p>
               <a
               class="btn btn-primary"
@@ -143,7 +151,7 @@
           <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praiaHawai.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Praias do Hawai</h5>
+              <h6 class="card-title">Praias do Hawai</h6>
               <p class="card-text"></p>
               <a
                 class="btn btn-primary"
@@ -159,9 +167,14 @@
           <div class="card col pb-1 py-md-2 border bg-light">
             <img class="card-img-top" src="/imagens/praia2.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Florianopolis</h5>
+              <h6 class="card-title">Florianopolis</h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#Florianopolis"
+                >saiba mais</a
+              >
             </div>
           </div>
         </div>
@@ -174,95 +187,139 @@
           <div class="card col pb-1 py-md-2 border bg-light">
             <img
               class="card-img-top"
-              src="/imagens/praiaRepublicaDominicana.jpg"
+              src="/imagens/monte-fuji.jpg"
             />
             <div class="card-body">
-              <h5 class="card-title">Re Dominicana</h5>
+              <h6 class="card-title">Monte fuji</h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#fuji"
+              >saiba mais</a
+            >
             </div>
           </div>
         </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card col pb-1 py-md-2 border bg-light">
-            <img class="card-img-top" src="/imagens/praiaMaldivas.jpg" />
+            <img class="card-img-top" src="/imagens/mont-blanc.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Ilhas Maldivas</h5>
+              <h6 class="card-title">Monte Blank</h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#Blank"
+                >saiba mais</a
+              >
             </div>
           </div>
         </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card col pb-1 py-md-2 border bg-light">
-            <img class="card-img-top" src="/imagens/praiaHawai.jpg" />
+            <img class="card-img-top" src="/imagens/monte-kilimanjaro.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Praias do Hawai</h5>
+              <h6 class="card-title">Monte Kilimanjaro </h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#Kilimanjaro"
+                >saiba mais</a
+              >
             </div>
           </div>
         </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card col pb-1 py-md-2 border bg-light">
-            <img class="card-img-top" src="/imagens/praia2.jpg" />
+            <img class="card-img-top" src="/imagens/Monte elbrus.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Florianopolis</h5>
+              <h6 class="card-title">Monte Elbrus</h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#Elbrus"
+                >saiba mais</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div><br>
-
+ <!----------------------------------------------------------------------------------------------------------------------------->
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card col pb-1 py-md-2 border bg-light">
             <img
               class="card-img-top"
-              src="/imagens/praiaRepublicaDominicana.jpg"
+              src="/imagens/Canada-Emerald-Lake-trees-mountains-house_m.jpg"
             />
             <div class="card-body">
-              <h5 class="card-title">Republica Dominicana</h5>
+              <h6 class="card-title">Canada Emerald Lake</h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#Canada"
+              >saiba mais</a
+            >
             </div>
           </div>
         </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card col pb-1 py-md-2 border bg-light">
-            <img class="card-img-top" src="/imagens/praiaMaldivas.jpg" />
+            <img class="card-img-top" src="/imagens/bladlake.png" />
             <div class="card-body">
-              <h5 class="card-title">Ilhas Maldivas</h5>
+              <h6 class="card-title">Eslovenia Blad Lake</h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#Eslovenia"
+                >saiba mais</a
+              >
             </div>
           </div>
         </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card col pb-1 py-md-2 border bg-light">
-            <img class="card-img-top" src="/imagens/praiaHawai.jpg" />
+            <img class="card-img-top" src="/imagens/plitvicelake.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Praias do Hawai</h5>
+              <h6 class="card-title">Croacia Plitvice lake</h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#Croacia"
+                >saiba mais</a
+              >
             </div>
           </div>
         </div><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card col pb-1 py-md-2 border bg-light">
-            <img class="card-img-top" src="/imagens/praia2.jpg" />
+            <img class="card-img-top" src="/imagens/five-flower-lake.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Florianopolis</h5>
+              <h6 class="card-title">China Five Flowers Lake</h6>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">saiba mais</a>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#China"
+                >saiba mais</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div><br>
+    <!-- ------------------------------------------------------------Cards----------------------------------->
+
+
+    <!-- ------------------------------------------------------------Modals------------------------------------------------------------------------------------------------------->
 
     <!-- Modal login -->
     <div
@@ -321,10 +378,15 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">Republica Dominicana</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 2000.00</h5>
+            
             
             </button>
           </div>
-          <div class="modal-body">A República Dominicana é um país caribenho que compartilha a ilha Hispaniola com o Haiti a oeste. É conhecida por suas praias, resorts e golfe. Seu território compreende floresta tropical, savana e montanhas, inclusive o Pico Duarte, a montanha mais alta do Caribe....</div>
+          <div class="modal-body">A República Dominicana é um país caribenho que compartilha a
+             ilha Hispaniola com o Haiti a oeste. É conhecida por suas praias, resorts e golfe.
+              Seu território compreende floresta tropical, savana e montanhas, inclusive o Pico Duarte,
+               a montanha mais alta do Caribe....</div>
           <div class="modal-footer">
         
           </div>
@@ -345,10 +407,16 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">Maldivas</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 2580.00</h5>
             
             </button>
           </div>
-          <div class="modal-body">As Maldivas são uma nação tropical no Oceano Índico composta por 26 atóis em formato de anel, que são formados por mais de 1.000 ilhas de coral. O país é conhecido pelas praias, pelas lagoas azuis e pelos extensos recifes. A capital, Malé, tem um movimentado mercado de peixes, restaurantes e lojas na rua principal, Majeedhee Magu, além da Hukuru Miskiy (também conhecida como Mesquita da Sexta-Feira), do século XVII, feita de coral branco esculpido</div>
+          <div class="modal-body">As Maldivas são uma nação tropical no Oceano 
+            Índico composta por 26 atóis em formato de anel, que são formados por mais de 1.000
+             ilhas de coral. O país é conhecido pelas praias, pelas lagoas azuis e pelos extensos recifes.
+              A capital, Malé, tem um movimentado mercado de peixes, restaurantes e lojas na rua principal,
+               Majeedhee Magu, além da Hukuru Miskiy (também conhecida como Mesquita da Sexta-Feira), do século XVII,
+                feita de coral branco esculpido</div>
           <div class="modal-footer">
         
           </div>
@@ -357,7 +425,7 @@
     </div>
 
 
-     <!-- Modal Ilhas Maldivas -->
+     <!-- Modal Ilhas hawai -->
      <div
      class="modal fade"
      id="Hawai"
@@ -370,10 +438,16 @@
        <div class="modal-content">
          <div class="modal-header">
            <h5 class="modal-title" id="exampleModalLongTitle">Hawai</h5>
+           <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 1600.00</h5>
            
            </button>
          </div>
-         <div class="modal-body"> O Havaí, um estado dos EUA, é um arquipélago vulcânico isolado no Pacífico Central. Suas ilhas são conhecidas pelas paisagens acidentadas compostas de penhascos, cachoeiras, florestas tropicais e praias com areia dourada, vermelha, preta e até mesmo verde. Das 6 ilhas principais, Oahu tem a maior cidade e capital do Havaí, Honolulu, que abriga a praia de Waikiki, em formato de lua crescente, e os memoriais da Segunda Guerra Mundial, em Pearl Harbor.</div>
+         <div class="modal-body"> O Havaí, um estado dos EUA, é um arquipélago 
+           vulcânico isolado no Pacífico Central. Suas ilhas são conhecidas pelas paisagens
+            acidentadas compostas de penhascos, cachoeiras, florestas tropicais e praias com 
+            areia dourada, vermelha, preta e até mesmo verde. Das 6 ilhas principais, Oahu tem
+             a maior cidade e capital do Havaí, Honolulu, que abriga a praia de Waikiki, em formato 
+             de lua crescente, e os memoriais da Segunda Guerra Mundial, em Pearl Harbor.</div>
          <div class="modal-footer">
        
          </div>
@@ -381,6 +455,413 @@
      </div>
    </div>
 
+
+
+      <!-- Modal florianopolis -->
+      <div
+      class="modal fade"
+      id="Florianopolis"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Florianopolis</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 200.00</h5>
+            
+            </button>
+          </div>
+          <div class="modal-body"> Florianópolis, a capital do estado de Santa Catarina
+             no sul do Brasil, é maioritariamente constituída pela Ilha de Santa Catarina,
+              com 54 km de comprimento. É famosa pelas suas praias, incluindo estâncias turísticas
+               populares como a Praia dos Ingleses na extremidade norte da ilha. A sua Lagoa da Conceição,
+                uma lagoa de água salgada,</div>
+          <div class="modal-footer">
+        
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- -------------------------------------------------------------------------------------------- -->
+
+       <!-- Modal canada -->
+       <div
+       class="modal fade"
+       id="Canada"
+       tabindex="-1"
+       role="dialog"
+       aria-labelledby="exampleModalCenterTitle"
+       aria-hidden="true"
+     >
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLongTitle">Canada</h5>
+             <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 5000.00</h5>
+             
+             </button>
+           </div>
+           <div class="modal-body"> Emerald Lake está localizado no Parque Nacional de Yoho, 
+             British Columbia, Canadá. O Parque Nacional de Yoho é um dos 4 parques nacionais 
+             contíguos no coração das Montanhas Rochosas do Canadá, ao longo da fronteira 
+             das províncias de British Columbia e Alberta.</div>
+           <div class="modal-footer">
+         
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+        <!-- Modal Eslovenia -->
+        <div
+        class="modal fade"
+        id="Eslovenia"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Eslovenia Blad Lake</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 7200.00</h5>
+              
+              </button>
+            </div>
+            <div class="modal-body"> O Lago de Bled, é um lago nos Alpes Julianos da região da Alta Carniola,
+               noroeste da Eslovénia, onde confina a cidade de Bled.
+                A área é um dos principais destinos turísticos da Eslovénia.
+                O lago fica a de 35km do Aeroporto Internacional de Liubliana e 55km da capital, 
+                Liubliana. </div>
+            <div class="modal-footer">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+         <!-- Modal fuji -->
+     <div
+     class="modal fade"
+     id="fuji"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLongTitle">Monte fuji</h5>
+           <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 6500.00</h5>
+           
+           </button>
+         </div>
+         <div class="modal-body"> Montanha mais alta do arquipélago japonês,
+            o Monte Fuji é um vulcão ainda ativo, mas com baixo risco de erupção.
+             Seu topo fica a 3.776 metros de altura, onde a temperatura pode chegar a 18 graus celsius negativos,
+              o que explica a neve constante do lugar. Um dos principais símbolos do Japão,
+               o monte fica no Parque Nacional Fuji-Hakone-Izu e é rodeado por cinco famosos lagos: Kawaguchi,
+                o de mais fácil acesso, Yamanaka, Sai, Shoji e Motosu, retratado nas notas de cinco mil ienes.</div>
+         <div class="modal-footer">
+       
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+      <!-- Modal Blank -->
+      <div
+      class="modal fade"
+      id="Blank"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Monte Blank</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 4500.00</h5>
+            
+            </button>
+          </div>
+          <div class="modal-body">Localizado nos alpes, na fronteira entre a França e a Itália, 
+            é a montanha mais alta da Europa Ocidental, com 4.808 metros de altitude. A coordenada geográfica, 
+            aliás, tem sido motivo de um imbróglio diplomático entre os dois países,
+             já que não se sabe em que ponto, exatamente, passa a linha imaginária que os separa.
+              A disputa ganhou ainda mais combustível quando o presidente francês Emmanuel Macron viajou para Chamonix, 
+              a principal cidade do lado francês, para anunciar a criação de uma zona de proteção ambiental que estaria
+               “engolindo” uma parte italiana. Dali um teleférico faz o percurso do centro da cidade,
+                a 1.030 metros, até o cume da montanha Aiguille du Midi, a 3.842 metros.</div>
+          <div class="modal-footer">
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+       <!-- Modal Ilhas Maldivas -->
+       <div
+       class="modal fade"
+       id="Kilimanjaro"
+       tabindex="-1"
+       role="dialog"
+       aria-labelledby="exampleModalCenterTitle"
+       aria-hidden="true"
+     >
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLongTitle">Monte Kilimanjaro</h5>
+             <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 6000.00</h5>
+             
+             </button>
+           </div>
+           <div class="modal-body">Ponto mais alto da África, o monte é formado por um antigo vulcão que fica ao Norte da Tanzânia,
+              na fronteira com o Quênia. Seu topo fica a 5.895 metros e, por isso, é coberto de neve durante o ano inteiro. 
+              Apesar da altura e da grandiosidade, o Kilimanjaro é bastante acessível. Sua escalada é relativamente fácil, 
+              graças às boas condições de suas trilhas e à infraestrutura dos acampamentos de suporte ao longo do trajeto. 
+              Não à toa, milhares de turistas visitam o Parque Nacional do Kilimanjaro em busca de aventura em meio à natureza.
+               Localizado no centro de uma planície de savana, em uma área de riquíssima biodiversidade,
+              o lugar foi eleito, em 1987, um dos patrimônios naturais da humanidade pela Unesco.</div>
+           <div class="modal-footer">
+         
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+        <!-- Modal Ilhas Maldivas -->
+        <div
+        class="modal fade"
+        id="Elbrus"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Monte Elbrus</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 5300.00</h5>
+              
+              </button>
+            </div>
+            <div class="modal-body">Com 5.642 metros de altitude,
+               a montanha fica na cordilheira do Cáucaso, no Sul da Rússia. 
+               O vulcão inativo conta com um sistema de três teleféricos, construídos no lado Sul da montanha,
+                que levam seus visitantes a 3.658 metros de altura. Quem quiser se aventurar até 
+                o seu topo precisa seguir por uma das trilhas e enfrentar a neve e o frio da região.</div>
+            <div class="modal-footer">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+   
+  
+
+
+      <!-- Modal Croacia -->
+      <div
+      class="modal fade"
+      id="Croacia"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Croacia Plitvice Lake</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 3800.00</h5>
+            
+            </button>
+          </div>
+          <div class="modal-body"> O Parque Nacional dos Lagos de Plitviče é uma reserva florestal
+             de 295 quilómetros quadrados no centro da Croácia. É conhecido por uma cadeia de 16 lagos 
+             escalonados unidos por cascatas que terminam num desfiladeiro de rocha calcária. Os passeios
+              e os trilhos de caminhada circundam e atravessam a água, e um barco elétrico faz a ligação entre os
+               12 lagos superiores e os 4 lagos inferiores. Estes últimos são o local das Veliki Slap, uma cascata de 78
+                metros de altura.</div>
+          <div class="modal-footer">
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Modal five flowers -->
+     <div
+     class="modal fade"
+     id="China"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLongTitle">China Five Flowers Lake</h5>
+           <h5 class="modal-title" id="exampleModalLongTitle">A partir de R$ 7500.00</h5>
+           
+           </button>
+         </div>
+         <div class="modal-body"> Uma das principais atrações naturais da China é a Reserva Natural de Jiuzhaigou, com o incrivelmente belo e misterioso Lago das Cinco Flores. Uma de suas principais características é explicada pelo nome do lago. Sua água muda periodicamente de cor e pode ser amarela, depois verde e depois azul. Na maioria das vezes, a água é de cor azul-diamante saturada. A constante mudança de cor é apenas uma das características do lago.</div>
+         <div class="modal-footer">
+       
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+   <!-- ------------------------------------------------------------Cards----------------------------------->
+
+
+
+  
+
+    <footer class="text-center text-white" style="background-color: #eff0bb;">
+      
+      <div class="container p-4">
+        
+        <section class="">
+          <div class="row">
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                   data-ripple-color="light"
+                   >
+                <img
+                     src="/imagens/footer1.jpg"
+                     class="w-100"
+                     />
+                <a href="#!">
+                  <div
+                       class="mask"
+                       style="background-color: rgba(251, 251, 251, 0.2);"
+                       ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                   data-ripple-color="light"
+                   >
+                <img
+                     src="/imagens/footer2.jpg"
+                     class="w-100"
+                     />
+                <a href="#!">
+                  <div
+                       class="mask"
+                       style="background-color: rgba(251, 251, 251, 0.2);"
+                       ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                   data-ripple-color="light"
+                   >
+                <img
+                     src="/imagens/footer3.jpg"
+                     class="w-100"
+                     />
+                <a href="#!">
+                  <div
+                       class="mask"
+                       style="background-color: rgba(251, 251, 251, 0.2);"
+                       ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                   data-ripple-color="light"
+                   >
+                <img
+                     src="/imagens/footer4.jpg"
+                     class="w-100"
+                     />
+                <a href="#!">
+                  <div
+                       class="mask"
+                       style="background-color: rgba(251, 251, 251, 0.2);"
+                       ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                   data-ripple-color="light"
+                   >
+                <img
+                     src="/imagens/footer5.jpg"
+                     class="w-100"
+                     />
+                <a href="#!">
+                  <div
+                       class="mask"
+                       style="background-color: rgba(251, 251, 251, 0.2);"
+                       ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                   class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                   data-ripple-color="light"
+                   >
+                <img
+                     src="/imagens/footer6.jpg"
+                     class="w-100"
+                     />
+                <a href="#!">
+                  <div
+                       class="mask"
+                       style="background-color: rgba(251, 251, 251, 0.2);"
+                       ></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+      </div>
+     
+  
+      
+      <div class="text-center  p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright: By Raul Cesar in Dev in House
+       
+      
+    </footer>
+  
+  
+  
 
 
 
@@ -393,6 +874,8 @@
 
 
   </body>
+
+    <!-- ------------------------------------------------------------scripts----------------------------------->
 
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -415,4 +898,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+
+   <!-- ------------------------------------------------------------scripts----------------------------------->
 </html>
