@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Alerta Horas</title>
+    <meta http-equiv="refresh" content="1" />
+  </head>
+
+  <body></body>
+
+  <script type="text/javascript">
+    var horacerta = new Date();
+    document.body.innerHTML =
+      "<h1>Hora certa:  " +
+      horacerta.getHours() +
+      ":" +
+      horacerta.getMinutes() +
+      ":" +
+      horacerta.getSeconds();
+    ("</h1>");
+  </script>
+
+  <style>
+    body {
+      background-color: rgb(190, 211, 214);
+    }
+    h1 {
+      color: rgb(255, 0, 0);
+      position: fixed;
+      top: 40%;
+      bottom: 40%;
+      left: 40%;
+      right: 40%;
+    }
+   
+  </style>
+</html>
