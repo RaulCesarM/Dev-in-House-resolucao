@@ -27,27 +27,24 @@
     function pergunta() {
       var nome;
       var sobrenome;
-      
-      
+
       sobrenome = window.prompt("Ola!! qual o seu sobrenome?");
       nome = window.prompt("Ola!! qual o seu nome?");
       if (!sobrenome || !nome) {
         alert("Não é aceito valores vazios !!");
-      } else if (Number(sobrenome) || Number(nome) ) {
+      } else if (Number(sobrenome) || Number(nome)) {
         validacaoNome();
-      } else{
-          alert(
-            "Ola ! " + sobrenome.toUpperCase() + " " +
-              "Seu Sobrenome tem "  + sobrenome.length + "  letras!"
-          );
-        }
-
-
-
-
+      } else {
+        alert(
+          "Ola ! " +
+            sobrenome.toUpperCase() +
+            " " +
+            "Seu Sobrenome tem " +
+            sobrenome.length +
+            "  letras!"
+        );
+      }
     }
-      
-  
   </script>
 
   <script type="text/javascript">
