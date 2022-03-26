@@ -1,15 +1,26 @@
+const expr = "#";
+let PRIMEIRO = 2;
+let SEGUNDO = 6;
 
+matematica(PRIMEIRO, SEGUNDO, expr);
 
-const expr = 'Papayas';
-switch (expr) {
-  case 'Oranges':
-    console.log('Oranges are $0.59 a pound.');
-    break;
-  case 'Mangoes':
-  case 'Papayas':
-    console.log('Mangoes and papayas are $2.79 a pound.');
-    // expected output: "Mangoes and papayas are $2.79 a pound."
-    break;
-  default:
-    console.log(`Sorry, we are out of ${expr}.`);
+function matematica(N1, N2, expr) {
+  switch (expr) {
+    case "*":
+      console.log(N1 * N2);
+      break;
+    case "-":
+      console.log(N1 - N2);
+      break;
+
+    case "+":
+      console.log(N1 + N2);
+      break;
+    case "/":
+      console.log(N1 / N2);
+      break;
+
+    default:
+      console.log(`Sorry, meu amigo não temos a expressão ${expr}.`);
+  }
 }
