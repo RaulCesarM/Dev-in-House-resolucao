@@ -51,7 +51,8 @@ ul {
   
 
   li a:hover {
-    background-color: #111;
+    background-color: rgb(29, 22, 136);
+    transition: 0.3s;
   }
 
   .logo  {
