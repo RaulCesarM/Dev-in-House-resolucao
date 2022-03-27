@@ -2,6 +2,8 @@ body{
     background-image: url("/imagens/pngwing.com.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-bottom: 150px;
+   
 }
 
 .coloracao{
@@ -11,3 +13,16 @@ body{
 
 
 }
+
+footer {
+    position: fixed;
+    display: line;
+    text-align: center;
+   
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+   padding-bottom: 0px;
+}
+
