@@ -50,8 +50,13 @@
     height: 90px;
 }
 footer {
+    position: fixed;
+    display: line;
     text-align: center;
-    padding: 3px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
     background-color: rgb(122, 152, 233);
     color: white;
   }
