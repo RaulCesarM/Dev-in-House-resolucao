@@ -15,18 +15,14 @@ export class Pedido {
     this.nomeCliente = nomeCliente;
   }
   adicionarProduto([...carrinhoDeCompra]) {
+    this.listaProdutos = [];
+    let carrinho = [];
+    carrinho = carrinhoDeCompra;
 
-    this.listaProdutos=[];
-    let carrinho = []
-    carrinho = carrinhoDeCompra; 
-
-   
     if (carrinhoDeCompra instanceof Object === true) {
-
-        for(let i of carrinho){
-            this.listaProdutos.push(i)
-        }
-
+      for (let i of carrinho) {
+        this.listaProdutos.push(i);
+      }
     } else {
       console.log("ERROOU SEU PITOCO");
     }
@@ -42,5 +38,15 @@ export class Pedido {
       console.log("mostrando", e, " do pedido de " + Quem + " ");
     });
     return "";
+  }
+
+  calcularTotal() {
+    const produtos = this.listaProdutos;
+
+    const total = produtos.reduce(
+      (acumulado, produto) => acumulado + produto.preco * produto.quantidade,
+      0
+    );
+    return total;
   }
 }

@@ -11,13 +11,13 @@ let Televisor = new Produtos();
 Televisor.nome = "Tv";
 Televisor.emEstoque =true;
 Televisor.preco = 2000;
-Televisor.quantidade =30;
+Televisor.quantidade =3;
 
 let arcondicionado = new Produtos();
 arcondicionado.nome = "Ar";
 arcondicionado.preco=800
 arcondicionado.emEstoque = true;
-arcondicionado.quantidade = 15;
+arcondicionado.quantidade = 5;
 
 let bicicleta = new Produtos();
 bicicleta.nome="adventure bike"
@@ -41,11 +41,11 @@ pedido1.numeroPedido= 123;
 pedido1.colocaDataPedido();
 pedido1.adicionarProduto([...carrinhoDeCompra]);
 
-console.log(pedido1)
+// console.log(pedido1)
 
 
 console.log(pedido1.mostrar())
 
-
+console.log(pedido1.calcularTotal())
 
 
