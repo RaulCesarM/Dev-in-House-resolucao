@@ -1,49 +1,46 @@
-class Pedido {
-  #numeroPedido; // id
-  #dataPedido; // date
-  #estaPago = false; //boolean
-  #listaProdutos = [];
-  #nomeCliente;
+import { Produtos } from "./Produto.mjs";
+
+export class Pedido {
+  numeroPedido = Number; // id
+  dataPedido; // date
+  estaPago = false; //boolean
+  listaProdutos = [];
+  nomeCliente;
 
   constructor(numeroPedido, dataPedido, estaPago, listaProdutos, nomeCliente) {
-    this.#numeroPedido = numeroPedido;
-    this.#dataPedido = dataPedido;
-    this.#estaPago = estaPago;
+    this.numeroPedido = numeroPedido;
+    this.dataPedido = dataPedido;
+    this.estaPago = estaPago;
     this.listaProdutos = listaProdutos;
-    this.#nomeCliente = nomeCliente;
+    this.nomeCliente = nomeCliente;
   }
-  getNumeroPedido() {
-    return this.#numeroPedido;
-  }
-  setNumeroPedido(nPedido) {
-    this.#numeroPedido = nPedido;
+  adicionarProduto([...carrinhoDeCompra]) {
+
+    this.listaProdutos=[];
+    let carrinho = []
+    carrinho = carrinhoDeCompra; 
+
+   
+    if (carrinhoDeCompra instanceof Object === true) {
+
+        for(let i of carrinho){
+            this.listaProdutos.push(i)
+        }
+
+    } else {
+      console.log("ERROOU SEU PITOCO");
+    }
   }
 
-  getDataPedido() {
-    return this.#dataPedido;
-  }
-  setDataPedido() {       
-    this.#dataPedido = new Date().toLocaleDateString("pt-BR");
+  colocaDataPedido() {
+    this.dataPedido = new Date().toLocaleDateString("pt-BR");
   }
 
-  getEstaPago() {
-    return this.#estaPago;
-  }
-  setEstaPago(isPago) {
-    this.#estaPago = isPago;
-  }
-
-  getListaProdutos() {
-    return this.#listaProdutos;
-  }
-  setListaProdutos(LiProd) {
-    this.#listaProdutos = LiProd;
-  }
-
-  getNomeCliente() {
-    return this.#nomeCliente;
-  }
-  setNomeCliente(nome) {
-    this.#nomeCliente = nome;
+  mostrar() {
+    let Quem = this.nomeCliente;
+    this.listaProdutos.forEach(function (e) {
+      console.log("mostrando", e, " do pedido de " + Quem + " ");
+    });
+    return "";
   }
 }
