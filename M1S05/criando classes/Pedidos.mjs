@@ -33,9 +33,11 @@ export class Pedido {
   }
 
   mostrar() {
+   
+    let Num = this.numeroPedido;    
     let Quem = this.nomeCliente;
-    this.listaProdutos.forEach(function (e) {
-      console.log("mostrando", e, " do pedido de " + Quem + " ");
+    this.listaProdutos.forEach(function ( e) {
+      console.log(`mostrando `, e ,`  do pedido  :  ${Num}  de:  ${Quem} `);
     });
     return "";
   }
