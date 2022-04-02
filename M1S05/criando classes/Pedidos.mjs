@@ -6,6 +6,7 @@ export class Pedido {
   estaPago = false; //boolean
   listaProdutos = [];
   nomeCliente;
+  total;
 
   constructor(numeroPedido, dataPedido, estaPago, listaProdutos, nomeCliente) {
     this.numeroPedido = numeroPedido;
@@ -13,6 +14,7 @@ export class Pedido {
     this.estaPago = estaPago;
     this.listaProdutos = listaProdutos;
     this.nomeCliente = nomeCliente;
+    
   }
   adicionarProduto([...carrinhoDeCompra]) {
     this.listaProdutos = [];
@@ -33,22 +35,31 @@ export class Pedido {
   }
 
   mostrar() {
-   
-    let Num = this.numeroPedido;    
+    const total = this.calcularTotal();
+    let Num = this.numeroPedido;
     let Quem = this.nomeCliente;
-    this.listaProdutos.forEach(function ( e) {
-      console.log(`mostrando `, e ,`  do pedido  :  ${Num}  de:  ${Quem} `);
+    let Listar = this.listaProdutos;
+    console.log(`Cliente : ${Quem} pedido de numero ${Num} Total : ${total}`);
+
+    Listar.forEach((Listar) => {
+      console.log(
+        `Produto ${Listar.nome} com preço de ${Listar.preco.toLocaleString("pt-br",{ style: "currency", currency: "BRL" }
+        )} comprou uma quantidade de ${Listar.quantidade} ! ` );
+      
     });
+   
     return "";
   }
 
   calcularTotal() {
     const produtos = this.listaProdutos;
 
-    const total = produtos.reduce(
+    var total = produtos.reduce(
       (acumulado, produto) => acumulado + produto.preco * produto.quantidade,
       0
     );
-    return total;
+        return (total.toLocaleString(
+        "pt-br",
+        { style: "currency", currency: "BRL" }));
   }
 }

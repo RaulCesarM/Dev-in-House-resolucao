@@ -22,16 +22,17 @@ arcondicionado.emEstoque = 23;
 
 
 let bicicleta = new Produtos();
-bicicleta.nome="bike"
+bicicleta.nome="Mountain bike"
 bicicleta.preco= 15000
 bicicleta.quantidade = 3;
 bicicleta.emEstoque = 12;
 
 let geladeira = new Produtos();
-geladeira.nome = "aGel";
+geladeira.nome = "Geladeira ";
 geladeira.preco = 3000;
 geladeira.quantidade =2;
 geladeira.emEstoque = 5;
+
 
 
 let notebook = new Produtos();
@@ -71,12 +72,12 @@ pedido2.adicionarProduto([...carrinhoDeCompra2]);
 
 console.table(pedido1.mostrar())
 
-console.log(pedido1.calcularTotal())
+
 
 
 console.table(pedido2.mostrar())
 
-console.log(pedido2.calcularTotal())
+
 
 
 
