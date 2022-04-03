@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+
+
+    <script>
+        setInterval(myTimer, 2000);
+
+        function myTimer() {
+            const date = new Date();
+            document.getElementById("relogio").innerHTML = date.toLocaleTimeString();
+        }
+    </script>
+
+
+    <style>
+        .center {
+            align-content: center;
+            text-align: center;
+            border: 25px solid #4d21ad;
+            margin: auto;
+            width: 20%;
+            padding: 10px;font-size: x-large;
+
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    <div class="center">
+        <h1>Brasil</h1>       
+        <h1 id="relogio"></h1>
+    </div>  
+
+</html>
