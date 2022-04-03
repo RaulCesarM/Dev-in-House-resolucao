@@ -1,12 +1,12 @@
 import { Produtos } from "./Produto.mjs";
 
 export class Pedido {
-  numeroPedido = Number; // id
+  numeroPedido; // int
   dataPedido; // date
   estaPago = false; //boolean
-  listaProdutos = [];
-  nomeCliente;
-  total;
+  listaProdutos;// array list
+  nomeCliente;// string
+  total;//double
 
   constructor(numeroPedido, dataPedido, estaPago, listaProdutos, nomeCliente) {
     this.numeroPedido = numeroPedido;
@@ -26,7 +26,7 @@ export class Pedido {
         this.listaProdutos.push(i);
       }
     } else {
-      console.log("ERROOU SEU PITOCO");
+      console.log("ERROO");
     }
   }
 
