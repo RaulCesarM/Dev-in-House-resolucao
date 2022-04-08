@@ -4,25 +4,20 @@ export class Pedido {
   numeroPedido; // int
   dataPedido; // date
   estaPago = false; //boolean
-  listaProdutos;// array list
-  nomeCliente;// string
-  total;//double
+  listaProdutos; // array list
+  nomeCliente; // string
+  total; //double
 
   constructor(numeroPedido, dataPedido, estaPago, listaProdutos, nomeCliente) {
     this.numeroPedido = numeroPedido;
     this.dataPedido = dataPedido;
     this.estaPago = estaPago;
-    this.listaProdutos = listaProdutos;
+    this.listaProdutos = listaProdutos = [];
     this.nomeCliente = nomeCliente;
-    
   }
   adicionarProduto([...carrinhoDeCompra]) {
-    this.listaProdutos = [];
-    let carrinho = [];
-    carrinho = carrinhoDeCompra;
-
     if (carrinhoDeCompra instanceof Object === true) {
-      for (let i of carrinho) {
+      for (let i of carrinhoDeCompra) {
         this.listaProdutos.push(i);
       }
     } else {
@@ -43,11 +38,13 @@ export class Pedido {
 
     Listar.forEach((Listar) => {
       console.log(
-        `Produto ${Listar.nome} com preço de ${Listar.preco.toLocaleString("pt-br",{ style: "currency", currency: "BRL" }
-        )} comprou uma quantidade de ${Listar.quantidade} ! ` );
-      
+        `Produto ${Listar.nome} com preço de ${Listar.preco.toLocaleString(
+          "pt-br",
+          { style: "currency", currency: "BRL" }
+        )} comprou uma quantidade de ${Listar.quantidade} ! `
+      );
     });
-   
+
     return "";
   }
 
@@ -58,8 +55,9 @@ export class Pedido {
       (acumulado, produto) => acumulado + produto.preco * produto.quantidade,
       0
     );
-        return (total.toLocaleString(
-        "pt-br",
-        { style: "currency", currency: "BRL" }));
+    return total.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
   }
 }
