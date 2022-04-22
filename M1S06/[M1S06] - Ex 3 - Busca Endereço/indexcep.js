@@ -11,7 +11,11 @@ var estado = "";
 
 async function chamaCEP() {
     const cep = document.getElementById("InputCep").value;
+    if(cep.length == 8){
+
+
   const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+  
 
   if (!response.ok) {
     const err = await response.json();
@@ -19,6 +23,9 @@ async function chamaCEP() {
   }
 
   const data = await response.json();
+  if(data.Bairro === undefined){
+    return alert("CEP não encontrado");
+  }
   rua = data.logradouro;
   bairro = data.bairro;
   cidade = data.localidade;
@@ -33,4 +40,7 @@ async function chamaCEP() {
   document.getElementById("IRUA").appendChild(Rua);
   document.getElementById("ICIDADE").appendChild(Cidade);
   document.getElementById("IESTADO").appendChild(Estado);
+}else{
+    alert("CEP inválido");
+}
 }
