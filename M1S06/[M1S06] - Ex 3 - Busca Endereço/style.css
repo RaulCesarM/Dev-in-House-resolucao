@@ -1,0 +1,18 @@
+body {
+
+    background-color: rgb(38, 174, 129);
+}
+
+h1 {
+    color: rgb(19, 22, 110);
+}
+
+.container {
+    align-items: center;
+    text-decoration: blue;
+
+}
+
+.amostra {
+    background-color: burlywood;
+}
