@@ -1,0 +1,11 @@
+.container{
+    margin-top: 50px;
+    margin-bottom: 120px;
+    background-color: rgb(67, 156, 179);
+
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(143, 116, 99);
+}
