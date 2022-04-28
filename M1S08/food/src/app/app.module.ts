@@ -11,9 +11,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { CardapioComponent } from './pages/cardapio/cardapio.component';
-import { LanchesComponent } from './components/content/lanches/lanches.component';
-import { BebidasComponent } from './components/content/bebidas/bebidas.component';
-import { PorcoesComponent } from './components/content/porcoes/porcoes.component';
+
+import { FormsModule } from '@angular/forms';
+import { UsersComponent } from './components/users/users.component';
+import { PedidosComponent } from './components/pedidos/pedidos.component';
 
 
 const routes: Routes = [
@@ -24,14 +25,20 @@ const routes: Routes = [
     path: 'sobre', component: AboutComponent
   },
   {
-    path: 'cardapioBebidas', component: BebidasComponent // poderi ter subrotinas mas preferi o geito masi simples porque o simples funciona
+    path: 'cardapio', component: CardapioComponent
   },
   {
-    path: 'cardapioLanches', component: LanchesComponent
+    path: 'cardapio', component: ContentComponent
   },
   {
-    path: 'cardapioPorcoes', component: PorcoesComponent
-  }
+    path: 'pedido', component: PedidosComponent
+  },
+  {
+    path: 'usuario', component: UsersComponent
+  },
+
+
+
 ];
 
 
@@ -45,14 +52,15 @@ const routes: Routes = [
     HomeComponent,
     CarrouselComponent,
     CardapioComponent,
-    LanchesComponent,
-    BebidasComponent,
-    PorcoesComponent,
+    UsersComponent,
+    PedidosComponent,
+ 
    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes)
     
   ],
