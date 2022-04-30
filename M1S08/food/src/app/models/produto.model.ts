@@ -5,3 +5,5 @@ export interface Iproduto {
     preco: string;
     imagem: string;
 }
+
+
